@@ -1,0 +1,6 @@
+{
+  "name": "Generador de Tarjetas de Presentación",
+  "description": "Una aplicación web interactiva para crear y personalizar tarjetas de presentación profesionales con vista previa en tiempo real y descarga de imágenes.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
