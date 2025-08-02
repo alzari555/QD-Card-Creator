@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import QRCode from 'react-qr-code';
+import { QRCodeCanvas } from 'qrcode.react';
 import { CardData, Template, FontFamily } from '../types';
 import { PhoneIcon, MailIcon, GlobeIcon, BuildingIcon } from './icons';
 
@@ -54,9 +54,10 @@ const renderTemplate = (data: CardData, vCardString: string, contrastColor: stri
 
     const qrCodeComponent = data.showQrCode && (
         <div className="bg-white p-1 rounded-md shadow-md w-[5em] h-[5em]">
-            <QRCode 
+            <QRCodeCanvas 
                 value={vCardString} 
                 level="M"
+                size={128}
                 style={{ height: "auto", maxWidth: "100%", width: "100%" }}
             />
         </div>
